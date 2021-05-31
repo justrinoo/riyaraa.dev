@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+body{
+    background-color: $root;
+    color: $gray-400;
+    font-family: 'Montserrat',sans-serif;
+}
+.text-nav:hover{
+    background: $gray-900;
+    border-radius: 10px;
+}
+.card{
+    background-color: $biru;
+}
+.text-story{
+    color: $gray-400;
+}
+.text-me{
+    color: $yellow;
+}
