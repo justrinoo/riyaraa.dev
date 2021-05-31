@@ -5,7 +5,7 @@ export default class Navigation extends Component {
 		return (
 			<>
 				{/* Start Navigation */}
-				<nav className="navbar navbar-expand-md navbar-light navbar-bg-light">
+				<nav className="navbar navbar-expand-md navbar-light navbar-bg-light ">
 					<div className="container">
 						<a href="#" className="navbar-brand text-white fw-bold">
 							RINO SATYA PUTRA

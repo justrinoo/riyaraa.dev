@@ -5,6 +5,8 @@ import TelegramIcon from "../../assets/images/icons/telegram.svg";
 import TwitterIcon from "../../assets/images/icons/twitter.svg";
 import LinkedinIcon from "../../assets/images/icons/linkedin.svg";
 import Profile from "../../assets/images/profile.png";
+import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 export default class Body extends Component {
 	render() {
 		return (
@@ -24,9 +26,9 @@ export default class Body extends Component {
 										}}
 										className="card-img-top img-fluid"
 									/>
-									<h4 className="mt-4 fw-bold text-me">
+									<h3 className="mt-4 fw-bold text-me">
 										Hi There, im Rino Satya Putra👋
-									</h4>
+									</h3>
 									<p className="text-md-center mt-3 text-story fw-normal">
 										Im is a fresh graduate of Frontend Interested Web Developer,
 										I always learn new things about technology especially on
@@ -82,6 +84,13 @@ export default class Body extends Component {
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<section className="mt-5">
+					<Skills />
+				</section>
+				<section className="mt-5">
+					<Portfolio />
 				</section>
 			</>
 		);
