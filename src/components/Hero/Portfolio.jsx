@@ -7,7 +7,7 @@ export default class Portfolio extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col">
-							<h4 className="mt-5 fw-bold mx-5">Portfolio</h4>
+							<h3 className="mt-5 fw-bold mx-5">Portfolio</h3>
 						</div>
 					</div>
 					<div className="row">
