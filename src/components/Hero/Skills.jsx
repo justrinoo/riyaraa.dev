@@ -1,20 +1,4 @@
 import React, { Component } from "react";
-import Html from "../../assets/images/HTML.png";
-import Css from "../../assets/images/CSS.png";
-import Javascript from "../../assets/images/Javascript.png";
-import Bootstrap from "../../assets/images/Bootstrap.png";
-import Php from "../../assets/images/Php.png";
-import Nodejs from "../../assets/images/NodeJs.png";
-import ReactIcon from "../../assets/images/React.png";
-import Expressjs from "../../assets/images/ExpressJs.png";
-import Git from "../../assets/images/Git.png";
-import Github from "../../assets/images/Github.png";
-import Mysql from "../../assets/images/MYSQL.png";
-import Figma from "../../assets/images/FIGMA.png";
-import Typescript from "../../assets/images/Typescript.png";
-import Vue from "../../assets/images/Vue.png";
-import Redux from "../../assets/images/Redux.png";
-import Golang from "../../assets/images/Golang.png";
 export default class Skills extends Component {
 	render() {
 		return (
@@ -22,9 +6,7 @@ export default class Skills extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col mx-5">
-							<h4 className="mx-3 mt-5">
-								Knowledge skills in website technology 💻
-							</h4>
+							<h4 className="mx-3 mt-5">{this.props.textKnowladge}</h4>
 							<hr
 								className="mx-3"
 								style={{
@@ -37,11 +19,15 @@ export default class Skills extends Component {
 					</div>
 					<div className="row">
 						<div className="col-md-3">
-							<img src={Html} className="mx-5 mt-4 img-fluid" alt="Html Icon" />
+							<img
+								src={this.props.stack.Html}
+								className="mx-5 mt-4 img-fluid"
+								alt="Html Icon"
+							/>
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Css}
+								src={this.props.stack.Css}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -49,7 +35,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Javascript}
+								src={this.props.stack.Javascript}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -57,7 +43,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Bootstrap}
+								src={this.props.stack.Bootstrap}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -65,7 +51,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Php}
+								src={this.props.stack.Php}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -73,7 +59,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Nodejs}
+								src={this.props.stack.Nodejs}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -81,7 +67,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={ReactIcon}
+								src={this.props.stack.ReactIcon}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -89,7 +75,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Expressjs}
+								src={this.props.stack.Expressjs}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -97,7 +83,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Git}
+								src={this.props.stack.Git}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -105,7 +91,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Github}
+								src={this.props.stack.Github}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -113,7 +99,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Mysql}
+								src={this.props.stack.Mysql}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -121,14 +107,14 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Figma}
+								src={this.props.stack.Figma}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
 							/>
 						</div>
 					</div>
-					<h4 className="mx-5 mt-5">Currently in the learning stage 🔄</h4>
+					<h4 className="mx-5 mt-5">{this.props.textLearn}</h4>
 					<hr
 						style={{ width: "37%", height: "3px", margin: "2px" }}
 						className="mx-5"
@@ -136,7 +122,7 @@ export default class Skills extends Component {
 					<div className="row">
 						<div className="col-md-3">
 							<img
-								src={Typescript}
+								src={this.props.stack.Typescript}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -144,7 +130,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Vue}
+								src={this.props.stack.Vue}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -152,7 +138,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Redux}
+								src={this.props.stack.Redux}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"
@@ -160,7 +146,7 @@ export default class Skills extends Component {
 						</div>
 						<div className="col-md-3">
 							<img
-								src={Golang}
+								src={this.props.stack.Golang}
 								width={100}
 								className="mx-5 mt-4 img-fluid"
 								alt="Html Icon"

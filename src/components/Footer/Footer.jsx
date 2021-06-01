@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import GithubIcon from "../../assets/images/icons/github.svg";
-import InstagramIcon from "../../assets/images/icons/instagram.svg";
-import TelegramIcon from "../../assets/images/icons/telegram.svg";
-import TwitterIcon from "../../assets/images/icons/twitter.svg";
-import LinkedinIcon from "../../assets/images/icons/linkedin.svg";
+
 export default class Footer extends Component {
 	render() {
 		return (
@@ -13,9 +9,11 @@ export default class Footer extends Component {
 						<div className="col mt-4">
 							<div className="text-center">
 								<h3 className="text-footer-first mt-5 fw-bold">
-									Interested in working together?
+									{this.props.textFooterFirst}
 								</h3>
-								<h3 className="text-footer-first fw-bold">Send me email!</h3>
+								<h3 className="text-footer-first fw-bold">
+									{this.props.textSendEmail}
+								</h3>
 							</div>
 						</div>
 					</div>
@@ -32,7 +30,7 @@ export default class Footer extends Component {
 								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 							</svg>
 							<a href="" className="text-white fs-5 fw-bold mx-1">
-								rinosatyaputra.id@gmail.com
+								{this.props.textMyGmail}
 							</a>
 						</div>
 					</div>
@@ -40,7 +38,7 @@ export default class Footer extends Component {
 						<div className="d-flex justify-content-center mt-3 mb-3">
 							<a href="#">
 								<img
-									src={GithubIcon}
+									src={this.props.Icons.github}
 									className="img-fluid mx-3 mt-3"
 									width={38}
 									alt="Github Icon"
@@ -48,7 +46,7 @@ export default class Footer extends Component {
 							</a>
 							<a href="#">
 								<img
-									src={TelegramIcon}
+									src={this.props.Icons.telegram}
 									className="img-fluid mx-3 mt-3"
 									width={38}
 									alt="Telegram Icon"
@@ -56,7 +54,7 @@ export default class Footer extends Component {
 							</a>
 							<a href="#">
 								<img
-									src={InstagramIcon}
+									src={this.props.Icons.instagram}
 									className="img-fluid mx-3 mt-3"
 									width={38}
 									alt="Instagram Icon"
@@ -64,7 +62,7 @@ export default class Footer extends Component {
 							</a>
 							<a href="#">
 								<img
-									src={TwitterIcon}
+									src={this.props.Icons.twitter}
 									className="img-fluid mx-3 mt-3"
 									width={38}
 									alt="Twitter Icon"
@@ -72,7 +70,7 @@ export default class Footer extends Component {
 							</a>
 							<a href="#">
 								<img
-									src={LinkedinIcon}
+									src={this.props.Icons.linkedin}
 									className="img-fluid mx-3 mt-3"
 									width={38}
 									alt="Linkedin Icon"

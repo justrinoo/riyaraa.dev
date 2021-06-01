@@ -11,18 +11,32 @@ export default class Navigation extends Component {
 							RINO SATYA PUTRA
 						</a>
 						<div className="navbar-nav">
-							<a href="#" className="nav-link text-white fw-bold mx-3 text-nav">
-								Home
-							</a>
-							<a href="#" className="nav-link text-white fw-bold mx-3 text-nav">
-								About
-							</a>
-							<a href="#" className="nav-link text-white fw-bold mx-3 text-nav">
-								Skills
-							</a>
-							<a href="#" className="nav-link text-white fw-bold mx-3 text-nav">
-								Portfolio
-							</a>
+							<div className="d-none d-md-flex">
+								<a
+									href="#"
+									className="nav-link text-white fw-bold mx-3 text-nav"
+								>
+									Home
+								</a>
+								<a
+									href="#"
+									className="nav-link text-white fw-bold mx-3 text-nav"
+								>
+									About
+								</a>
+								<a
+									href="#"
+									className="nav-link text-white fw-bold mx-3 text-nav"
+								>
+									Skills
+								</a>
+								<a
+									href="#"
+									className="nav-link text-white fw-bold mx-3 text-nav"
+								>
+									Portfolio
+								</a>
+							</div>
 						</div>
 					</div>
 				</nav>

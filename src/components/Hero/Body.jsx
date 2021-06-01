@@ -1,10 +1,22 @@
 import React, { Component } from "react";
-import GithubIcon from "../../assets/images/icons/github.svg";
-import InstagramIcon from "../../assets/images/icons/instagram.svg";
-import TelegramIcon from "../../assets/images/icons/telegram.svg";
-import TwitterIcon from "../../assets/images/icons/twitter.svg";
-import LinkedinIcon from "../../assets/images/icons/linkedin.svg";
-import Profile from "../../assets/images/profile.png";
+import Html from "../../assets/images/HTML.png";
+import Css from "../../assets/images/CSS.png";
+import Javascript from "../../assets/images/Javascript.png";
+import Bootstrap from "../../assets/images/Bootstrap.png";
+import Php from "../../assets/images/Php.png";
+import Nodejs from "../../assets/images/NodeJs.png";
+import ReactIcon from "../../assets/images/React.png";
+import Expressjs from "../../assets/images/ExpressJs.png";
+import Git from "../../assets/images/Git.png";
+import Github from "../../assets/images/Github.png";
+import Mysql from "../../assets/images/MYSQL.png";
+import Figma from "../../assets/images/FIGMA.png";
+import Typescript from "../../assets/images/Typescript.png";
+import Vue from "../../assets/images/Vue.png";
+import Redux from "../../assets/images/Redux.png";
+import Golang from "../../assets/images/Golang.png";
+import Sekolahku from "../../assets/images/sekolahku.png";
+import IconGithub from "../../assets/images/IconGithub.png";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 export default class Body extends Component {
@@ -17,7 +29,7 @@ export default class Body extends Component {
 							<div className="card mt-5 text-center h-100">
 								<div className="card-body">
 									<img
-										src={Profile}
+										src={this.props.images.profile}
 										alt="My Face :D"
 										style={{
 											width: "180px",
@@ -26,22 +38,15 @@ export default class Body extends Component {
 										}}
 										className="card-img-top img-fluid"
 									/>
-									<h3 className="mt-4 fw-bold text-me">
-										Hi There, im Rino Satya Putra👋
-									</h3>
+									<h3 className="mt-4 fw-bold text-me">{this.props.name}</h3>
 									<p className="text-md-center mt-3 text-story fw-normal">
-										Im is a fresh graduate of Frontend Interested Web Developer,
-										I always learn new things about technology especially on
-										websites, I am also disciplined to be able to work
-										individually and in a team and have a high desire to learn
-										to learn new things. and now I'm in the midst of my career
-										to become a software engineer.
+										{this.props.description}
 									</p>
-									<h5 className="mt-3 fw-bold">You Can Find Me On</h5>
+									<h5 className="mt-3 fw-bold">{this.props.findMe}</h5>
 									<div className="d-flex justify-content-center">
 										<a href="#">
 											<img
-												src={GithubIcon}
+												src={this.props.images.github}
 												className="img-fluid mx-3 mt-3"
 												width={38}
 												alt="Github Icon"
@@ -49,7 +54,7 @@ export default class Body extends Component {
 										</a>
 										<a href="#">
 											<img
-												src={TelegramIcon}
+												src={this.props.images.telegram}
 												className="img-fluid mx-3 mt-3"
 												width={38}
 												alt="Telegram Icon"
@@ -57,7 +62,7 @@ export default class Body extends Component {
 										</a>
 										<a href="#">
 											<img
-												src={InstagramIcon}
+												src={this.props.images.instagram}
 												className="img-fluid mx-3 mt-3"
 												width={38}
 												alt="Instagram Icon"
@@ -65,7 +70,7 @@ export default class Body extends Component {
 										</a>
 										<a href="#">
 											<img
-												src={TwitterIcon}
+												src={this.props.images.twitter}
 												className="img-fluid mx-3 mt-3"
 												width={38}
 												alt="Twitter Icon"
@@ -73,7 +78,7 @@ export default class Body extends Component {
 										</a>
 										<a href="#">
 											<img
-												src={LinkedinIcon}
+												src={this.props.images.linkedin}
 												className="img-fluid mx-3 mt-3"
 												width={38}
 												alt="Linkedin Icon"
@@ -87,10 +92,41 @@ export default class Body extends Component {
 				</section>
 
 				<section className="mt-5">
-					<Skills />
+					<Skills
+						textKnowladge="Knowledge skills in website technology 💻"
+						stack={{
+							Html,
+							Css,
+							Javascript,
+							Bootstrap,
+							Php,
+							Nodejs,
+							ReactIcon,
+							Expressjs,
+							Git,
+							Github,
+							Mysql,
+							Figma,
+							Typescript,
+							Vue,
+							Redux,
+							Golang,
+						}}
+						textLearn="Currently in the learning stage 🔄"
+					/>
 				</section>
 				<section className="mt-5">
-					<Portfolio />
+					<Portfolio
+						images={{
+							Sekolahku,
+							IconGithub,
+						}}
+						descPortfolio="	Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Laboriosam magnam accusamus tenetur nemo ducimus?
+						Repellendus similique saepe necessitatibus dolorem,
+						veritatis, alias ea error accusamus hic optio magnam
+						adipisci libero. Quod?"
+					/>
 				</section>
 			</>
 		);
