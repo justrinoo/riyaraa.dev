@@ -15,8 +15,16 @@ import Typescript from "../../assets/images/Typescript.png";
 import Vue from "../../assets/images/Vue.png";
 import Redux from "../../assets/images/Redux.png";
 import Golang from "../../assets/images/Golang.png";
-import Sekolahku from "../../assets/images/sekolahku.png";
 import IconGithub from "../../assets/images/IconGithub.png";
+import Sekolahku from "../../assets/images/sekolahku.png";
+import SobatQuran from "../../assets/images/sobatquran.png";
+import GramediaLite from "../../assets/images/GramediaLite.jpg";
+import NewsBlog from "../../assets/images/News-Blog.jpg";
+import StayCation from "../../assets/images/stayCation.png";
+import MyCv from "../../assets/images/myCv.png";
+import BlibliClone from "../../assets/images/blibli-clone.png";
+import Gesjan from "../../assets/images/gesjan.png";
+import RaportLearning from "../../assets/images/raportLearning.jpg";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 export default class Body extends Component {
@@ -119,13 +127,24 @@ export default class Body extends Component {
 					<Portfolio
 						images={{
 							Sekolahku,
+							SobatQuran,
+							GramediaLite,
+							NewsBlog,
+							StayCation,
+							BlibliClone,
+							MyCv,
+							Gesjan,
+							RaportLearning,
 							IconGithub,
 						}}
-						descPortfolio="	Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Laboriosam magnam accusamus tenetur nemo ducimus?
-						Repellendus similique saepe necessitatibus dolorem,
-						veritatis, alias ea error accusamus hic optio magnam
-						adipisci libero. Quod?"
+						descPortfolioSekolahku="Sekolahku adalah sebuah website untuk kamu yang ingin mencari nama-nama sekolah dikota kamu atau di indonesia"
+						descPortfolioSobatQuran="Sobat Quran sebuah website untuk membaca alquran ayat, dan suratnya juga lengkap, dan bisa melihat jadwal sholat"
+						descPortfolioGramediaLite="GramediaLite adalah sebuah website seperti website Gramedia aslinya semacam e-commerce, dan website ini sebagai bahan belajar saya untuk lomba LSP(Lembaga Sertifikasi Profesi) Tingkat SMK 2021"
+						descPortfolioNewsBlog="News Blog sebuah website seperti website penyedia blog, kamu bisa menulis blog, atau melihat blog orang lain"
+						descPortfolioStayCation="Staycation sebuah website untuk mencari lokasi wisata diwilayah terdekat, anda dapat menikmati keindahan dengan hanya duduk saja"
+						descPortfolioBlibliClone="Blibli Clone website seperti blibli.com, website ini sebagai project latihan saya untuk masuk prakerin"
+						descPortfolioMyCv="Website cv versi awal saya atau versi beta"
+						descPortfolioGesjan="Gesjan adalah website penyedia makanan ringan supermarket mini"
 					/>
 				</section>
 			</>
