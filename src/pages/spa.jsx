@@ -15,14 +15,6 @@ class Spa extends React.Component {
 			<>
 				<Navigation />
 				<Body
-					name="Hi There, im Rino Satya Putra👋"
-					description="	Im is a fresh graduate of Frontend Interested Web Developer,
-					I always learn new things about technology especially on
-					websites, I am also disciplined to be able to work
-					individually and in a team and have a high desire to learn
-					to learn new things. and now I'm in the midst of my career
-					to become a software engineer."
-					findMe="You Can Find Me On"
 					images={{
 						github: GithubIcon,
 						instagram: InstagramIcon,

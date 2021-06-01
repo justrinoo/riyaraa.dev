@@ -27,7 +27,13 @@ import Gesjan from "../../assets/images/gesjan.png";
 import RaportLearning from "../../assets/images/raportLearning.jpg";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
+import Rotate from "react-reveal/Rotate";
 export default class Body extends Component {
+	state = {
+		name: "Hi There, im Rino Satya Putra👋",
+		description:
+			"Im is a fresh graduate of Frontend Interested Web Developer, I always learn new things about technology especially on websites, I am also disciplined to be able to work individually and in a team and have a high desire to learn to learn new things. and now I'm in the midst of my career to become a software engineer.",
+	};
 	render() {
 		return (
 			<>
@@ -46,52 +52,62 @@ export default class Body extends Component {
 										}}
 										className="card-img-top img-fluid"
 									/>
-									<h3 className="mt-4 fw-bold text-me">{this.props.name}</h3>
+									<h3 className="mt-4 fw-bold text-me">{this.state.name}</h3>
 									<p className="text-md-center mt-3 text-story fw-normal">
-										{this.props.description}
+										{this.state.description}
 									</p>
 									<h5 className="mt-3 fw-bold">{this.props.findMe}</h5>
 									<div className="d-flex justify-content-center">
-										<a href="#">
-											<img
-												src={this.props.images.github}
-												className="img-fluid mx-3 mt-3"
-												width={38}
-												alt="Github Icon"
-											/>
-										</a>
-										<a href="#">
-											<img
-												src={this.props.images.telegram}
-												className="img-fluid mx-3 mt-3"
-												width={38}
-												alt="Telegram Icon"
-											/>
-										</a>
-										<a href="#">
-											<img
-												src={this.props.images.instagram}
-												className="img-fluid mx-3 mt-3"
-												width={38}
-												alt="Instagram Icon"
-											/>
-										</a>
-										<a href="#">
-											<img
-												src={this.props.images.twitter}
-												className="img-fluid mx-3 mt-3"
-												width={38}
-												alt="Twitter Icon"
-											/>
-										</a>
-										<a href="#">
-											<img
-												src={this.props.images.linkedin}
-												className="img-fluid mx-3 mt-3"
-												width={38}
-												alt="Linkedin Icon"
-											/>
-										</a>
+										<Rotate>
+											<a href="https://github.com/riyaraa">
+												<img
+													src={this.props.images.github}
+													className="img-fluid mx-3 mt-3"
+													width={38}
+													alt="Github Icon"
+												/>
+											</a>
+										</Rotate>
+										<Rotate>
+											<a href="https://t.me/riyaraa">
+												<img
+													src={this.props.images.telegram}
+													className="img-fluid mx-3 mt-3"
+													width={38}
+													alt="Telegram Icon"
+												/>
+											</a>
+										</Rotate>
+										<Rotate>
+											<a href="https://instagram.com/rinoosp">
+												<img
+													src={this.props.images.instagram}
+													className="img-fluid mx-3 mt-3"
+													width={38}
+													alt="Instagram Icon"
+												/>
+											</a>
+										</Rotate>
+										<Rotate>
+											<a href="https://twitter.com/riyaraaa">
+												<img
+													src={this.props.images.twitter}
+													className="img-fluid mx-3 mt-3"
+													width={38}
+													alt="Twitter Icon"
+												/>
+											</a>
+										</Rotate>
+										<Rotate>
+											<a href="https://www.linkedin.com/in/rino-satya-putra-940539173">
+												<img
+													src={this.props.images.linkedin}
+													className="img-fluid mx-3 mt-3"
+													width={38}
+													alt="Linkedin Icon"
+												/>
+											</a>
+										</Rotate>
 									</div>
 								</div>
 							</div>
@@ -145,6 +161,7 @@ export default class Body extends Component {
 						descPortfolioBlibliClone="Blibli Clone website seperti blibli.com, website ini sebagai project latihan saya untuk masuk prakerin"
 						descPortfolioMyCv="Website cv versi awal saya atau versi beta"
 						descPortfolioGesjan="Gesjan adalah website penyedia makanan ringan supermarket mini"
+						descRaportLearning="Raport online untuk siswa dan siswi melihat hasil belajar"
 					/>
 				</section>
 			</>
