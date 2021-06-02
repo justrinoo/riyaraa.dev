@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
 import Rotate from "react-reveal/Rotate";
+import { isValidElement } from "react";
 export default class Footer extends Component {
 	render() {
 		return (
 			<>
-				<div className="container">
+				<div className="container" id="talk">
 					<div className="row">
 						<div className="col mt-4">
 							<div className="text-center">
@@ -39,7 +40,7 @@ export default class Footer extends Component {
 							</a>
 						</div>
 					</div>
-					<div className="row">
+					<div className="row mb-5">
 						<div className="d-flex justify-content-center">
 							<Rotate>
 								<a href="https://github.com/riyaraa">

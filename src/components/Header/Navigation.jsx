@@ -1,41 +1,48 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Navigation extends Component {
 	render() {
 		return (
 			<>
 				{/* Start Navigation */}
-				<nav className="navbar navbar-expand-md navbar-light navbar-bg-light ">
+				<nav className="navbar navbar-expand-md fixed-top">
 					<div className="container">
-						<a href="#" className="navbar-brand text-white fw-bold">
+						<h4 className="text-saya navbar-brand text-white fw-bold d-block d-md-block position-relative">
 							RINO SATYA PUTRA
-						</a>
-						<div className="navbar-nav">
+						</h4>
+						<div className="navbar-nav ">
 							<div className="d-none d-md-flex">
-								<a
-									href="#"
+								<Link
+									onClick={() => window.location.replace("#app")}
 									className="nav-link text-white fw-bold mx-3 text-nav"
 								>
-									Home
-								</a>
-								<a
-									href="#"
+									Beranda
+								</Link>
+								<Link
+									onClick={() => window.location.replace("#about")}
 									className="nav-link text-white fw-bold mx-3 text-nav"
 								>
 									About
-								</a>
-								<a
-									href="#"
+								</Link>
+								<Link
+									onClick={() => window.location.replace("#skills")}
 									className="nav-link text-white fw-bold mx-3 text-nav"
 								>
 									Skills
-								</a>
-								<a
-									href="#"
+								</Link>
+								<Link
+									onClick={() => window.location.replace("#portfolio")}
 									className="nav-link text-white fw-bold mx-3 text-nav"
 								>
 									Portfolio
-								</a>
+								</Link>
+								<Link
+									onClick={() => window.location.replace("#talk")}
+									className="nav-link text-white fw-bold mx-3 text-nav"
+								>
+									Lets Talk
+								</Link>
 							</div>
 						</div>
 					</div>

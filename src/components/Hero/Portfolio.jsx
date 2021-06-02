@@ -15,7 +15,7 @@ export default class Portfolio extends Component {
 	render() {
 		return (
 			<>
-				<div className="container">
+				<div className="container" id="portfolio">
 					<div className="row">
 						<div className="col">
 							<h2 className="mt-5 fw-bold ">Portfolio</h2>

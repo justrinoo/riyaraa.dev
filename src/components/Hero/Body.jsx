@@ -32,12 +32,12 @@ export default class Body extends Component {
 	state = {
 		name: "Hi There, im Rino Satya Putra👋",
 		description:
-			"Im is a fresh graduate of Frontend Interested Web Developer, I always learn new things about technology especially on websites, I am also disciplined to be able to work individually and in a team and have a high desire to learn to learn new things. and now I'm in the midst of my career to become a software engineer.",
+			"Im is a fresh graduate of Frontend Interested Junior Web Developer, I always learn new things about technology especially on websites, I am also disciplined to be able to work individually and in a team and have a high desire  to learn new things. and now I'm in the midst of my career to become a software engineer.",
 	};
 	render() {
 		return (
 			<>
-				<section className="container">
+				<section className="container" id="about">
 					<div className="row">
 						<div className="col-md-10 mx-auto justify-content-center">
 							<div className="card mt-5 text-center h-100">
@@ -57,7 +57,7 @@ export default class Body extends Component {
 										{this.state.description}
 									</p>
 									<h5 className="mt-3 fw-bold">{this.props.findMe}</h5>
-									<div className="d-flex justify-content-center">
+									<div className="d-flex justify-content-center icons">
 										<Rotate>
 											<a href="https://github.com/riyaraa">
 												<img
@@ -117,6 +117,7 @@ export default class Body extends Component {
 
 				<section className="mt-5">
 					<Skills
+						refMostPicked={this.props.refMostPicked}
 						textKnowladge="Knowledge skills in website technology 💻"
 						stack={{
 							Html,
