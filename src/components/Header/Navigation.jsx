@@ -124,27 +124,6 @@ export default class Navigation extends Component {
 									</svg>
 									<small className="d-block">Projects</small>
 								</Link>
-								<Link
-									onClick={() => window.location.replace("#talk")}
-									className="nav-link text-white fw-bold mx-3 text-nav"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										className="h-6 w-6"
-										fill="none"
-										width={35}
-										viewBox="0 0 24 24"
-										stroke="currentColor"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											strokeWidth={2}
-											d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-										/>
-									</svg>
-									<small className="d-block">Lets Talk</small>
-								</Link>
 							</div>
 						</div>
 					</div>
