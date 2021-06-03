@@ -39,8 +39,8 @@ export default class Body extends Component {
 			<>
 				<section className="container" id="about">
 					<div className="row">
-						<div className="col-md-10 mx-auto justify-content-center">
-							<div className="card mt-5 text-center h-100">
+						<div className="col-md-10 mx-auto mt-3 justify-content-center">
+							<div className="card text-center h-100">
 								<div className="card-body">
 									<img
 										src={this.props.images.profile}
