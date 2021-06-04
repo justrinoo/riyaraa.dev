@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
 import Rotate from "react-reveal/Rotate";
 import { isValidElement } from "react";
+import { Link } from "react-router-dom";
 export default class Footer extends Component {
 	render() {
 		return (
@@ -99,6 +100,14 @@ export default class Footer extends Component {
 							<h5 className="text-center mt-5">
 								Copyright 2021 Rino Satya Putra All Rights Reserved
 							</h5>
+							<p className="text-center">
+								<Link
+									to="/blog"
+									className="text-decoration-none text-white fw-bold"
+								>
+									Visit Me Blog
+								</Link>
+							</p>
 						</div>
 					</div>
 				</div>
