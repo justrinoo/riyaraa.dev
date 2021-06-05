@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
 	return (
 		<>
-			<nav className="navbar navbar-expand-md sticky-top">
+			<nav className="navbar navbar-expand-md">
 				<div className="container">
 					<h4 className="navbar-brand text-white fw-bold d-none d-md-block">
 						Made by{" "}

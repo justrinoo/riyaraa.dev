@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
 import Rotate from "react-reveal/Rotate";
-import { isValidElement } from "react";
 import { Link } from "react-router-dom";
 export default class Footer extends Component {
 	render() {
