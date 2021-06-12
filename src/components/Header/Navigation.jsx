@@ -13,12 +13,6 @@ export default class Navigation extends Component {
 						<div className="navbar-nav ">
 							<div className="d-none d-md-flex">
 								<Link
-									onClick={() => window.location.replace("#app")}
-									className="nav-link text-white fw-bold mx-3 text-nav"
-								>
-									Beranda
-								</Link>
-								<Link
 									onClick={() => window.location.replace("#about")}
 									className="nav-link text-white fw-bold mx-3 text-nav"
 								>
@@ -42,6 +36,14 @@ export default class Navigation extends Component {
 								>
 									Lets Talk
 								</Link>
+								<div class="form-check form-switch mt-2 mx-3">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value="ada"
+										id="flexSwitchCheckDefault"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -1,6 +1,5 @@
 {
 	"name": "website-personal",
-	"homepage": "https://riyaraa.github.io/riyaraa.dev",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
