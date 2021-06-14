@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Bounce from "react-reveal/Bounce";
+import Navigation from "../Header/Navigation";
 export default class Portfolio extends Component {
 	state = {
 		textJudulSekolahku: "Sekolahku",
@@ -15,6 +16,7 @@ export default class Portfolio extends Component {
 	render() {
 		return (
 			<>
+				<Navigation />
 				<div className="container" id="portfolio">
 					<div className="row">
 						<div className="col">

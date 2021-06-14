@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LatestBlog from "./LatestBlog";
 import PostBlog from "./PostBlog";
-
+import axios from "axios";
 export default function Content() {
+	const [blog, setBlog] = useState([]);
+
+	const getBlog = async () => {
+		try {
+			const response = await axios.get("http://localhost:5000/api/v1/blog");
+			setBlog(response.data.data);
+		} catch (err) {
+			throw new Error(err.message);
+		}
+	};
+	useEffect(() => {
+		getBlog();
+	}, []);
+
 	return (
 		<>
 			<div className="container">
 				<div className="row">
-					<PostBlog />
+					<PostBlog blog={blog} />
 				</div>
 				<div className="row">
 					<h3 className="mt-4">

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Zoom from "react-reveal/Zoom";
+import Navigation from "../Header/Navigation";
 export default class Skills extends Component {
 	// handleInform = () => {
 	// 	let tester = document.querySelector(".tester");
@@ -28,6 +29,7 @@ export default class Skills extends Component {
 	render() {
 		return (
 			<>
+				<Navigation />
 				<div className="container" id="skills">
 					<div className="row">
 						<div className="col">
@@ -40,7 +42,7 @@ export default class Skills extends Component {
 									<span className="fw-bold">!</span>
 								</button>
 								{this.state.show ? (
-									<div className="bg-dark text-light p-2 position-absolute bottom-50 end-50">
+									<div className="bg-dark text-light p-2 position-aboslute top-50 start-0">
 										<span>
 											<span className="fw-bold">Information!</span>
 
