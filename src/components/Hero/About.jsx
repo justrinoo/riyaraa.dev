@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 import Rotate from "react-reveal/Rotate";
 import Navigation from "../Header/Navigation";
@@ -35,7 +35,7 @@ export default function Body(props) {
 										<a href="https://github.com/riyaraa">
 											<img
 												src={props.images.github}
-												className="img-fluid mx-3 mt-3"
+												className="img-fluid mx-3 mt-3 image-icons"
 												width={38}
 												alt="Github Icon"
 											/>
@@ -45,7 +45,7 @@ export default function Body(props) {
 										<a href="https://t.me/riyaraa">
 											<img
 												src={props.images.telegram}
-												className="img-fluid mx-3 mt-3"
+												className="img-fluid mx-3 mt-3 image-icons"
 												width={38}
 												alt="Telegram Icon"
 											/>
@@ -55,7 +55,7 @@ export default function Body(props) {
 										<a href="https://instagram.com/rinoosp">
 											<img
 												src={props.images.instagram}
-												className="img-fluid mx-3 mt-3"
+												className="img-fluid mx-3 mt-3 image-icons"
 												width={38}
 												alt="Instagram Icon"
 											/>
@@ -65,7 +65,7 @@ export default function Body(props) {
 										<a href="https://twitter.com/riyaraaa">
 											<img
 												src={props.images.twitter}
-												className="img-fluid mx-3 mt-3"
+												className="img-fluid mx-3 mt-3 image-icons"
 												width={38}
 												alt="Twitter Icon"
 											/>
@@ -75,7 +75,7 @@ export default function Body(props) {
 										<a href="https://www.linkedin.com/in/rino-satya-putra-940539173">
 											<img
 												src={props.images.linkedin}
-												className="img-fluid mx-3 mt-3"
+												className="img-fluid mx-3 mt-3 image-icons"
 												width={38}
 												alt="Linkedin Icon"
 											/>

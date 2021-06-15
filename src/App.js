@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import TheApp from "./router/TheApp";
 import "./App.scss";
 function App() {

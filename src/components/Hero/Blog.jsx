@@ -3,10 +3,11 @@ import Content from "../Blog/Content";
 import Header from "../Blog/Header";
 import Footer from "../Blog/Footer";
 
-export default function Blog() {
+export default function Blog(props) {
+	const history = props.history;
 	return (
 		<>
-			<Header />
+			<Header history={history} />
 			<Content />
 			<Footer />
 		</>

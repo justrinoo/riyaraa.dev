@@ -29,6 +29,12 @@ body{
 .form-check-input{
     cursor: pointer;
 }
+.image-icons{
+    transition: .2s;
+}
+.image-icons:hover{
+    transform: scale(1.7);
+}
 
 .footer{
     background-color: #115173;

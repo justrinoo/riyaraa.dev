@@ -38,8 +38,7 @@ import RaportLearning from "../assets/images/raportLearning.jpg";
 import Projects from "../components/Hero/Portfolio";
 import LetsTalk from "../components/Footer/Footer";
 import NotFound from "../components/NotFound";
-
-import ThemeContextPage from "../context/ThemeContext";
+import Login from "../components/Private/Login";
 function Spa() {
 	return (
 		<>
@@ -154,8 +153,13 @@ function Spa() {
 						/>
 					)}
 				/>
-				<Route path="/blog" component={Blog} />
-				<Route component={NotFound} />
+				<Route exact path="/blog" component={Blog} />
+				<Route
+					exact
+					path="/private/login"
+					render={(props) => <Login {...props} />}
+				/>
+				<Route path="*" component={NotFound} />
 			</Switch>
 		</>
 	);
