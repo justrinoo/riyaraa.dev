@@ -40,9 +40,9 @@ export default function Navigation() {
 							>
 								Lets Talk
 							</Link>
-							<div class="form-check form-switch mt-2 mx-3">
+							<div className="form-check form-switch mt-2 mx-3">
 								<input
-									class="form-check-input"
+									className="form-check-input"
 									type="checkbox"
 									onChange={(e) => handlerSave(e.target.checked)}
 								/>

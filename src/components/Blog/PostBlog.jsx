@@ -32,7 +32,7 @@ export default function PostBlog(props) {
 										<span className="text-white"> post a blog on</span>
 										<span className="text-muted fw-bold">
 											&nbsp;
-											{new Date(Date.now(blogs.createdAt)).toLocaleDateString()}
+											{new Date(Date.now(blogs.createdAt)).toDateString()}
 										</span>
 									</h6>
 									<Link

@@ -29,7 +29,7 @@ export default function Content() {
 				<div className="row">
 					{isLoading === true ? (
 						<div className="d-flex justify-content-center">
-							<span class="mt-3">Loading...</span>
+							<span className="mt-3">Loading...</span>
 						</div>
 					) : (
 						<PostBlog blog={blog} favoriteBlog={favoriteBlog} />
@@ -43,7 +43,7 @@ export default function Content() {
 					<div className="col-md-6 mt-3">
 						{isLoading ? (
 							<div className="d-flex justify-content-center">
-								<span class="mt-3">Loading...</span>
+								<span className="mt-3">Loading...</span>
 							</div>
 						) : (
 							<LatestBlog

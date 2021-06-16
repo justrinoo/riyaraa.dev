@@ -39,6 +39,8 @@ import Projects from "../components/Hero/Portfolio";
 import LetsTalk from "../components/Footer/Footer";
 import NotFound from "../components/NotFound";
 import Login from "../components/Private/Login";
+import DetailBlog from "../components/Blog/DetailBlog";
+import Posts from "../components/Blog/Posts";
 function Spa() {
 	return (
 		<>
@@ -158,6 +160,16 @@ function Spa() {
 					exact
 					path="/private/login"
 					render={(props) => <Login {...props} />}
+				/>
+				<Route
+					exact
+					path="/blog/:id"
+					render={(props) => <DetailBlog {...props} />}
+				/>
+				<Route
+					exact
+					path="/blog/create/new"
+					render={(props) => <Posts {...props} />}
 				/>
 				<Route path="*" component={NotFound} />
 			</Switch>

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
+	const isState = useState(false);
 	const history = props.history;
 	const name = localStorage.getItem("firstName");
 	const role = localStorage.getItem("role");
@@ -11,7 +12,7 @@ export default function Header(props) {
 		localStorage.removeItem("token");
 		localStorage.removeItem("role");
 		alert(`Arigataooo ${name}`);
-		history.push("/");
+		history.push("/blog");
 	}
 
 	return (
@@ -36,12 +37,15 @@ export default function Header(props) {
 								onClick="/categories"
 								className="nav-link text-white fw-bold mx-3 "
 							>
-								Categories
+								{isState ? "Categories" : ""}
 							</Link>
 							<Link to="/journey" className="nav-link text-white fw-bold mx-3 ">
-								Journey
+								{isState ? "Journey" : ""}
 							</Link>
-							<Link to="/journey" className="nav-link text-white fw-bold mx-3 ">
+							<Link
+								to="/blog/create/new"
+								className="nav-link text-white fw-bold mx-3 "
+							>
 								{role === "captain" ? "Create Post" : ""}
 							</Link>
 							<Link
