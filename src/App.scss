@@ -23,8 +23,22 @@ body{
     background: url(./assets/images/rounded-html.png) no-repeat center;
     height: 100%;
 }
+.input-post{
+    font-weight: bold;
+}
+.input-post:focus{
+    box-shadow: inset 0 -1px 0 #fff;
+}
 .text-footer-first{
     color: $yellow;
+}
+.my-profile{
+    transition: .2s;
+}
+.my-profile:hover{
+    border: 5px solid #263859;
+    border-radius: 100%;
+    transform: scale(1.2);
 }
 .form-check-input{
     cursor: pointer;

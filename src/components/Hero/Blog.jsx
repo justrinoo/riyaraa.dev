@@ -8,7 +8,7 @@ export default function Blog(props) {
 	return (
 		<>
 			<Header history={history} />
-			<Content />
+			<Content history={history} />
 			<Footer />
 		</>
 	);

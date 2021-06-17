@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navigation() {
-	const [isSave, setSave] = useState(false);
-	const handlerSave = (values) => {
-		setSave(values);
-	};
 	return (
 		<>
 			{/* Start Navigation Top */}
@@ -40,13 +36,6 @@ export default function Navigation() {
 							>
 								Lets Talk
 							</Link>
-							<div className="form-check form-switch mt-2 mx-3">
-								<input
-									className="form-check-input"
-									type="checkbox"
-									onChange={(e) => handlerSave(e.target.checked)}
-								/>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -113,6 +102,27 @@ export default function Navigation() {
 									/>
 								</svg>
 								<small className="d-block">Projects</small>
+							</Link>
+							<Link
+								to="/lets-talk"
+								className="nav-link text-white fw-bold mx-3 text-nav"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									className="h-6 w-6"
+									width={35}
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+									/>
+								</svg>
+								<small className="d-block">Lets Talk</small>
 							</Link>
 						</div>
 					</div>

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import LatestBlog from "./LatestBlog";
 import PostBlog from "./PostBlog";
 import axios from "axios";
-export default function Content() {
+export default function Content(props) {
+	const redirect = props.history;
+	console.log(redirect);
 	const [blog, setBlog] = useState([]);
 	const [favoriteBlog, setFavoriteBlog] = useState([]);
 	const [isLoading, setLoading] = useState(false);
@@ -16,7 +18,9 @@ export default function Content() {
 			setLoading(false);
 		} catch (err) {
 			setLoading(true);
-			throw new Error(err.message);
+			if (err) {
+				redirect.push("/comingsoon");
+			}
 		}
 	};
 	useEffect(() => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Profile from "../../assets/images/profile.png";
 import Rotate from "react-reveal/Rotate";
 import Navigation from "../Header/Navigation";
 export default function Body(props) {
@@ -19,11 +19,12 @@ export default function Body(props) {
 							<div className="card-body">
 								<img
 									alt="My Face :D"
+									src={Profile}
 									style={{
-										width: "150px",
+										width: "180px",
 										height: "170px",
 									}}
-									className="card-img-top img-fluid"
+									className="my-profile card-img-top img-fluid"
 								/>
 								<h3 className="mt-4 fw-bold text-me">{name}</h3>
 								<p className="text-md-center mt-3 text-story fw-normal">

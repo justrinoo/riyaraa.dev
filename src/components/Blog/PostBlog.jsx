@@ -24,9 +24,10 @@ export default function PostBlog(props) {
 					</div>
 					<div className="col-md-6">
 						<h3 className="mt-3">Favorite For Reading 😄</h3>
+
 						{data.map((blogs, blogIdx) => {
 							return (
-								<div className="flex mt-4" key={blogIdx + 1}>
+								<div className="mt-4" key={blogIdx + 1}>
 									<h6>
 										<span className="fw-bold text-white">{blogs.author}</span>
 										<span className="text-white"> post a blog on</span>

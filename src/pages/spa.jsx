@@ -41,6 +41,7 @@ import NotFound from "../components/NotFound";
 import Login from "../components/Private/Login";
 import DetailBlog from "../components/Blog/DetailBlog";
 import Posts from "../components/Blog/Posts";
+import ComingSoon from "../components/NotFound/ComingSoon";
 function Spa() {
 	return (
 		<>
@@ -155,7 +156,7 @@ function Spa() {
 						/>
 					)}
 				/>
-				<Route exact path="/blog" component={Blog} />
+				<Route exact path="/blog" render={(props) => <Blog {...props} />} />
 				<Route
 					exact
 					path="/private/login"
@@ -171,6 +172,7 @@ function Spa() {
 					path="/blog/create/new"
 					render={(props) => <Posts {...props} />}
 				/>
+				<Route path="/comingsoon" component={ComingSoon} />
 				<Route path="*" component={NotFound} />
 			</Switch>
 		</>
