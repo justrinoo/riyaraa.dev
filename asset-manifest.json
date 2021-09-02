@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/riyaraa.dev/static/css/main.9eab01be.chunk.css",
-    "main.js": "/riyaraa.dev/static/js/main.9e90a198.chunk.js",
-    "main.js.map": "/riyaraa.dev/static/js/main.9e90a198.chunk.js.map",
-    "runtime-main.js": "/riyaraa.dev/static/js/runtime-main.ea243c29.js",
-    "runtime-main.js.map": "/riyaraa.dev/static/js/runtime-main.ea243c29.js.map",
-    "static/js/2.4006d6fd.chunk.js": "/riyaraa.dev/static/js/2.4006d6fd.chunk.js",
-    "static/js/2.4006d6fd.chunk.js.map": "/riyaraa.dev/static/js/2.4006d6fd.chunk.js.map",
-    "static/js/3.64160879.chunk.js": "/riyaraa.dev/static/js/3.64160879.chunk.js",
-    "static/js/3.64160879.chunk.js.map": "/riyaraa.dev/static/js/3.64160879.chunk.js.map",
+    "main.css": "/riyaraa.dev/static/css/main.cb1eac0f.chunk.css",
+    "main.js": "/riyaraa.dev/static/js/main.90165913.chunk.js",
+    "main.js.map": "/riyaraa.dev/static/js/main.90165913.chunk.js.map",
+    "runtime-main.js": "/riyaraa.dev/static/js/runtime-main.d6e27559.js",
+    "runtime-main.js.map": "/riyaraa.dev/static/js/runtime-main.d6e27559.js.map",
+    "static/js/2.ff6d9a85.chunk.js": "/riyaraa.dev/static/js/2.ff6d9a85.chunk.js",
+    "static/js/2.ff6d9a85.chunk.js.map": "/riyaraa.dev/static/js/2.ff6d9a85.chunk.js.map",
+    "static/js/3.23464af3.chunk.js": "/riyaraa.dev/static/js/3.23464af3.chunk.js",
+    "static/js/3.23464af3.chunk.js.map": "/riyaraa.dev/static/js/3.23464af3.chunk.js.map",
     "index.html": "/riyaraa.dev/index.html",
-    "static/css/main.9eab01be.chunk.css.map": "/riyaraa.dev/static/css/main.9eab01be.chunk.css.map",
-    "static/js/2.4006d6fd.chunk.js.LICENSE.txt": "/riyaraa.dev/static/js/2.4006d6fd.chunk.js.LICENSE.txt",
+    "static/css/main.cb1eac0f.chunk.css.map": "/riyaraa.dev/static/css/main.cb1eac0f.chunk.css.map",
+    "static/js/2.ff6d9a85.chunk.js.LICENSE.txt": "/riyaraa.dev/static/js/2.ff6d9a85.chunk.js.LICENSE.txt",
     "static/media/CSS.54879197.png": "/riyaraa.dev/static/media/CSS.54879197.png",
     "static/media/FIGMA.1f9de5f5.png": "/riyaraa.dev/static/media/FIGMA.1f9de5f5.png",
     "static/media/Git.713d87bd.png": "/riyaraa.dev/static/media/Git.713d87bd.png",
@@ -34,9 +34,9 @@
     "static/media/twitter.d2970145.svg": "/riyaraa.dev/static/media/twitter.d2970145.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ea243c29.js",
-    "static/js/2.4006d6fd.chunk.js",
-    "static/css/main.9eab01be.chunk.css",
-    "static/js/main.9e90a198.chunk.js"
+    "static/js/runtime-main.d6e27559.js",
+    "static/js/2.ff6d9a85.chunk.js",
+    "static/css/main.cb1eac0f.chunk.css",
+    "static/js/main.90165913.chunk.js"
   ]
 }
