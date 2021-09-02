@@ -163,7 +163,7 @@ function TheApp() {
 								/>
 							)}
 						/>
-						{/* <Route exact path="/blog" render={(props) => <Blog {...props} />} />
+						<Route exact path="/blog" render={(props) => <Blog {...props} />} />
 						<Route
 							exact
 							path="/private/login"
@@ -178,7 +178,7 @@ function TheApp() {
 							exact
 							path="/blog/create/new"
 							render={(props) => <Posts {...props} />}
-						/> */}
+						/>
 						<Route path="/comingsoon" component={ComingSoon} />
 						<Route path="*" component={NotFound} />
 					</Switch>

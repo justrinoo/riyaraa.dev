@@ -8,7 +8,7 @@ export default function CustomTheme() {
 	const ThemeProps = useContext(ThemeContext);
 	return (
 		<>
-			<div className="mt-5 text-center">
+			<div className="mt-5 text-center d-md-none d-block">
 				<button
 					className={`${CustomStyles.btnLightSwtich} mx-2`}
 					onClick={ThemeProps.changeHandlerTheme}
