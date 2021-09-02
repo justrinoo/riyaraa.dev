@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import About from "../components/Hero/About";
 import Blog from "../components/Hero/Blog";
 import { Route, Switch } from "react-router-dom";
@@ -42,141 +42,283 @@ import Login from "../components/Private/Login";
 import DetailBlog from "../components/Blog/DetailBlog";
 import Posts from "../components/Blog/Posts";
 import ComingSoon from "../components/NotFound/ComingSoon";
-function Spa() {
+
+import AppContext from "../context/AppContext";
+const { ThemeContext } = AppContext;
+function TheApp() {
+	// console.log(ThemeContext);
+	const ThemeProps = useContext(ThemeContext);
 	return (
 		<>
-			<Switch>
-				<Route
-					exact
-					path="/"
-					render={(props) => (
-						<About
-							images={{
-								github: GithubIcon,
-								instagram: InstagramIcon,
-								telegram: TelegramIcon,
-								twitter: TwitterIcon,
-								linkedin: LinkedinIcon,
-								profile: Profile,
-							}}
-							{...props}
+			{ThemeProps.theme === "light" ? (
+				<div className="App bg-light text-dark">
+					<Switch>
+						<Route
+							exact
+							path="/"
+							render={(props) => (
+								<About
+									images={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									{...props}
+								/>
+							)}
 						/>
-					)}
-				/>
-				<Route
-					exact
-					path="/about"
-					render={(props) => (
-						<About
-							images={{
-								github: GithubIcon,
-								instagram: InstagramIcon,
-								telegram: TelegramIcon,
-								twitter: TwitterIcon,
-								linkedin: LinkedinIcon,
-								profile: Profile,
-							}}
-							{...props}
+						<Route
+							exact
+							path="/about"
+							render={(props) => (
+								<About
+									images={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									{...props}
+								/>
+							)}
 						/>
-					)}
-				/>
-				<Route
-					path="/skills"
-					render={() => (
-						<Skills
-							textKnowladge="Knowledge skills in website technology 💻"
-							stack={{
-								Html,
-								Css,
-								Javascript,
-								Bootstrap,
-								Php,
-								Nodejs,
-								ReactIcon,
-								Expressjs,
-								Git,
-								Github,
-								Mysql,
-								Figma,
-								Typescript,
-								Vue,
-								Redux,
-								Golang,
-							}}
-							textLearn="Currently in the learning stage 🔄"
+						<Route
+							path="/skills"
+							render={() => (
+								<Skills
+									textKnowladge="Knowledge skills in website technology 💻"
+									stack={{
+										Html,
+										Css,
+										Javascript,
+										Bootstrap,
+										Php,
+										Nodejs,
+										ReactIcon,
+										Expressjs,
+										Git,
+										Github,
+										Mysql,
+										Figma,
+										Typescript,
+										Vue,
+										Redux,
+										Golang,
+									}}
+									textLearn="Currently in the learning stage 🔄"
+								/>
+							)}
 						/>
-					)}
-				/>
-				<Route
-					path="/projects"
-					render={(props) => (
-						<Projects
-							images={{
-								Sekolahku,
-								SobatQuran,
-								GramediaLite,
-								NewsBlog,
-								StayCation,
-								BlibliClone,
-								MyCv,
-								Gesjan,
-								RaportLearning,
-								IconGithub,
-							}}
-							descPortfolioSekolahku="Sekolahku adalah sebuah website untuk kamu yang ingin mencari nama-nama sekolah dikota kamu atau di indonesia"
-							descPortfolioSobatQuran="Sobat Quran sebuah website untuk membaca alquran ayat, dan suratnya juga lengkap, dan bisa melihat jadwal sholat"
-							descPortfolioGramediaLite="GramediaLite adalah sebuah website seperti website Gramedia aslinya semacam e-commerce, dan website ini sebagai bahan belajar saya untuk lomba LSP(Lembaga Sertifikasi Profesi) Tingkat SMK 2021"
-							descPortfolioNewsBlog="News Blog sebuah website seperti website penyedia blog, kamu bisa menulis blog, atau melihat blog orang lain"
-							descPortfolioStayCation="Staycation sebuah website untuk mencari lokasi wisata diwilayah terdekat, anda dapat menikmati keindahan dengan hanya duduk saja"
-							descPortfolioBlibliClone="Blibli Clone website seperti blibli.com, website ini sebagai project latihan saya untuk masuk prakerin"
-							descPortfolioMyCv="Website cv versi awal saya atau versi beta"
-							descPortfolioGesjan="Gesjan adalah website penyedia makanan ringan supermarket mini"
-							descRaportLearning="Raport online untuk siswa dan siswi melihat hasil belajar"
-							{...props}
+						<Route
+							path="/projects"
+							render={(props) => (
+								<Projects
+									images={{
+										Sekolahku,
+										SobatQuran,
+										GramediaLite,
+										NewsBlog,
+										StayCation,
+										BlibliClone,
+										MyCv,
+										Gesjan,
+										RaportLearning,
+										IconGithub,
+									}}
+									descPortfolioSekolahku="Sekolahku adalah sebuah website untuk kamu yang ingin mencari nama-nama sekolah dikota kamu atau di indonesia"
+									descPortfolioSobatQuran="Sobat Quran sebuah website untuk membaca alquran ayat, dan suratnya juga lengkap, dan bisa melihat jadwal sholat"
+									descPortfolioGramediaLite="GramediaLite adalah sebuah website seperti website Gramedia aslinya semacam e-commerce, dan website ini sebagai bahan belajar saya untuk lomba LSP(Lembaga Sertifikasi Profesi) Tingkat SMK 2021"
+									descPortfolioNewsBlog="News Blog sebuah website seperti website penyedia blog, kamu bisa menulis blog, atau melihat blog orang lain"
+									descPortfolioStayCation="Staycation sebuah website untuk mencari lokasi wisata diwilayah terdekat, anda dapat menikmati keindahan dengan hanya duduk saja"
+									descPortfolioBlibliClone="Blibli Clone website seperti blibli.com, website ini sebagai project latihan saya untuk masuk prakerin"
+									descPortfolioMyCv="Website cv versi awal saya atau versi beta"
+									descPortfolioGesjan="Gesjan adalah website penyedia makanan ringan supermarket mini"
+									descRaportLearning="Raport online untuk siswa dan siswi melihat hasil belajar"
+									{...props}
+								/>
+							)}
 						/>
-					)}
-				/>
-				<Route
-					path="/lets-talk"
-					render={(props) => (
-						<LetsTalk
-							textFooterFirst="Interested in working together?"
-							textSendEmail="Send me email!"
-							textMyGmail="rinosatyaputra.id@gmail.com"
-							Icons={{
-								github: GithubIcon,
-								instagram: InstagramIcon,
-								telegram: TelegramIcon,
-								twitter: TwitterIcon,
-								linkedin: LinkedinIcon,
-								profile: Profile,
-							}}
-							mailto="mailto:rinosatyaputra.id@gmail.com"
-							{...props}
+						<Route
+							path="/lets-talk"
+							render={(props) => (
+								<LetsTalk
+									textFooterFirst="Interested in working together?"
+									textSendEmail="Send me email!"
+									textMyGmail="rinosatyaputra.id@gmail.com"
+									Icons={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									mailto="mailto:rinosatyaputra.id@gmail.com"
+									{...props}
+								/>
+							)}
 						/>
-					)}
-				/>
-				<Route exact path="/blog" render={(props) => <Blog {...props} />} />
-				<Route
-					exact
-					path="/private/login"
-					render={(props) => <Login {...props} />}
-				/>
-				<Route
-					exact
-					path="/blog/:id"
-					render={(props) => <DetailBlog {...props} />}
-				/>
-				<Route
-					exact
-					path="/blog/create/new"
-					render={(props) => <Posts {...props} />}
-				/>
-				<Route path="/comingsoon" component={ComingSoon} />
-				<Route path="*" component={NotFound} />
-			</Switch>
+						<Route exact path="/blog" render={(props) => <Blog {...props} />} />
+						<Route
+							exact
+							path="/private/login"
+							render={(props) => <Login {...props} />}
+						/>
+						<Route
+							exact
+							path="/blog/:id"
+							render={(props) => <DetailBlog {...props} />}
+						/>
+						<Route
+							exact
+							path="/blog/create/new"
+							render={(props) => <Posts {...props} />}
+						/>
+						<Route path="/comingsoon" component={ComingSoon} />
+						<Route path="*" component={NotFound} />
+					</Switch>
+				</div>
+			) : (
+				<div className="App bg-dark text-light ">
+					<Switch>
+						<Route
+							exact
+							path="/"
+							render={(props) => (
+								<About
+									images={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									{...props}
+								/>
+							)}
+						/>
+						<Route
+							exact
+							path="/about"
+							render={(props) => (
+								<About
+									images={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									{...props}
+								/>
+							)}
+						/>
+						<Route
+							path="/skills"
+							render={() => (
+								<Skills
+									textKnowladge="Knowledge skills in website technology 💻"
+									stack={{
+										Html,
+										Css,
+										Javascript,
+										Bootstrap,
+										Php,
+										Nodejs,
+										ReactIcon,
+										Expressjs,
+										Git,
+										Github,
+										Mysql,
+										Figma,
+										Typescript,
+										Vue,
+										Redux,
+										Golang,
+									}}
+									textLearn="Currently in the learning stage 🔄"
+								/>
+							)}
+						/>
+						<Route
+							path="/projects"
+							render={(props) => (
+								<Projects
+									images={{
+										Sekolahku,
+										SobatQuran,
+										GramediaLite,
+										NewsBlog,
+										StayCation,
+										BlibliClone,
+										MyCv,
+										Gesjan,
+										RaportLearning,
+										IconGithub,
+									}}
+									descPortfolioSekolahku="Sekolahku adalah sebuah website untuk kamu yang ingin mencari nama-nama sekolah dikota kamu atau di indonesia"
+									descPortfolioSobatQuran="Sobat Quran sebuah website untuk membaca alquran ayat, dan suratnya juga lengkap, dan bisa melihat jadwal sholat"
+									descPortfolioGramediaLite="GramediaLite adalah sebuah website seperti website Gramedia aslinya semacam e-commerce, dan website ini sebagai bahan belajar saya untuk lomba LSP(Lembaga Sertifikasi Profesi) Tingkat SMK 2021"
+									descPortfolioNewsBlog="News Blog sebuah website seperti website penyedia blog, kamu bisa menulis blog, atau melihat blog orang lain"
+									descPortfolioStayCation="Staycation sebuah website untuk mencari lokasi wisata diwilayah terdekat, anda dapat menikmati keindahan dengan hanya duduk saja"
+									descPortfolioBlibliClone="Blibli Clone website seperti blibli.com, website ini sebagai project latihan saya untuk masuk prakerin"
+									descPortfolioMyCv="Website cv versi awal saya atau versi beta"
+									descPortfolioGesjan="Gesjan adalah website penyedia makanan ringan supermarket mini"
+									descRaportLearning="Raport online untuk siswa dan siswi melihat hasil belajar"
+									{...props}
+								/>
+							)}
+						/>
+						<Route
+							path="/lets-talk"
+							render={(props) => (
+								<LetsTalk
+									textFooterFirst="Interested in working together?"
+									textSendEmail="Send me email!"
+									textMyGmail="rinosatyaputra.id@gmail.com"
+									Icons={{
+										github: GithubIcon,
+										instagram: InstagramIcon,
+										telegram: TelegramIcon,
+										twitter: TwitterIcon,
+										linkedin: LinkedinIcon,
+										profile: Profile,
+									}}
+									mailto="mailto:rinosatyaputra.id@gmail.com"
+									{...props}
+								/>
+							)}
+						/>
+						<Route exact path="/blog" render={(props) => <Blog {...props} />} />
+						<Route
+							exact
+							path="/private/login"
+							render={(props) => <Login {...props} />}
+						/>
+						<Route
+							exact
+							path="/blog/:id"
+							render={(props) => <DetailBlog {...props} />}
+						/>
+						<Route
+							exact
+							path="/blog/create/new"
+							render={(props) => <Posts {...props} />}
+						/>
+						<Route path="/comingsoon" component={ComingSoon} />
+						<Route path="*" component={NotFound} />
+					</Switch>
+				</div>
+			)}
 		</>
 	);
 }
 
-export default Spa;
+export default TheApp;

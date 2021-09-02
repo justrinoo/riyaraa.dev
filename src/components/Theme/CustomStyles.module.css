@@ -1,0 +1,16 @@
+.btnDarkSwtich {
+	background-color: #222831;
+	color: #fff;
+	border: none;
+	padding: 6px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+.btnLightSwtich {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	padding: 6px;
+	border-radius: 4px;
+	font-weight: bold;
+}
