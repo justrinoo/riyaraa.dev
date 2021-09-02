@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Profile from "../../assets/images/profile.png";
 import CustomTheme from "../Theme/customTheme";
 import Navigation from "../Header/Navigation";
 import AppContext from "../../context/AppContext";
-import { useContext } from "react/cjs/react.development";
 
 const { ThemeContext } = AppContext;
 
